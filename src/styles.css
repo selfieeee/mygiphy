@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Градиентный фон */
+    min-height: 100vh;
+}
+
+.App {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Устанавливаем позиционирование относительно родителя */
+    z-index: 1; /* Устанавливаем слой поверх фона */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для контейнера */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для создания эффекта плавающего блока */
+}
+
+form {
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.gif-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.05); /* Легкий темный фон для области с гифками */
+    border-radius: 8px;
+    position: relative;
+    z-index: 2; /* Устанавливаем слой выше, чем остальной фон */
+}
+
+.gif-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.gif-item p {
+    font-size: 14px;
+    text-align: center;
+}
